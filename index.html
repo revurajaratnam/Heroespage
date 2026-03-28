@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .Container{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: antiquewhite;
+            gap:3em;
+            background-color: black;
+        }
+        .Container,#menu{
+            display: flex;
+            text-align: center;
+            padding-inline: 4em 4em;
+            padding: 10px 1em;
+            padding-left:35em;
+            list-style: none;
+            gap:2em;
+        }
+        .hero{
+            display: flex;
+            text-align: center;
+            justify-content: center;
+        }
+        .hero h1{
+            font-size: 80px;
+            margin-bottom: 10px;
+        }
+        .hero p{
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        .hero #btn1{
+            font-size: 25px;
+            text-decoration: none;
+            background-color: rgb(10, 63, 255);
+            color: white;
+            border-radius: 5px;
+            padding: 10px 10px;
+            margin-right: 3em;
+        }
+        .hero #btn2{
+            font-size: 25px;
+            text-decoration: none;
+            border: solid 1px rgb(170, 170, 170);
+            color: rgb(170, 170, 170);
+            border-radius:5px;
+            padding: 10px 10px;
+            margin-left: 1em;
+        }
+        .hero #btn1:hover{
+            background-color:rgb(1, 43, 196) ;
+        }
+        .hero #btn2:hover{
+            color:white;
+            background-color:rgb(170, 170, 170) ;
+            border: none;
+        }
+        .hero #btn1:focus{
+            box-shadow:1px 1px 2px lightblue;
+            border: solid 5px rgb(108, 167, 251);
+            border-color:rgb(108, 167, 251);
+        }
+         .hero #btn2:focus{
+            box-shadow:1px 1px 2px lightblue;
+            border: solid 5px rgb(160, 162, 162);
+            border-color:rgb(160, 162, 162);
+            border-radius:5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="Container">
+        <ul id="menu">
+            <li>Home</li>
+            <li>Services</li>
+            <li>Branches</li>
+            <li>FAQ's</li>
+            <li>About</li>
+        </ul>
+    </div>
+   <div class="hero">
+     <div class="Container1">
+        <h1>Welcome Our Page</h1><br>
+        <p>This is our new Webpage.
+        </p>
+        <a href="#!" id="btn1">Primary Button</a>
+        <a href="#!" id="btn2">Secondary</a>
+    </div>
+   </div>
+</body>
+</html>
